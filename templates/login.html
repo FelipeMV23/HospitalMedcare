@@ -1,0 +1,35 @@
+{% load static %}
+{% include 'navegacion/navbar.html' %}
+
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
+
+<div class="container container-form">
+    <section>
+        <h1>Iniciar Sesión</h1>
+
+        <form method="post">
+            <!-- Mensajes de alerta (estáticos por ahora, pueden ser dinámicos si los agregas más tarde) -->
+            <div class="alert alert-success alert-dismissible fade show" role="alert" style="display: none;">
+                Mensaje de éxito aquí
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert" style="display: none;">
+                Mensaje de error aquí
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+            <!-- Campo para el RUT -->
+            <div class="form-group">
+                <input class="form-control" type="text" name="username" id="rut" required placeholder="Ingrese su RUT">
+            </div>
+
+            <!-- Campo para la contraseña -->
+            <div class="form-group">
+                <input class="form-control" type="password" name="password" id="password" required placeholder="Ingrese su Contraseña">
+            </div>
+
+            <!-- Botón de envío estilizado -->
+            <input class="buttons" type="submit" value="Iniciar Sesión">
+        </form>
+    </section>
+</div>

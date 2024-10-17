@@ -1,0 +1,32 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<body>
+    <header>
+        {% include 'navbar.html' %}
+    </header>
+    
+    <main>
+        <article class="container-relative">
+            <img src="{% static 'images/inicio.png' %}" alt="home" class="imagen-principal">
+            <div class="text-overlay">
+                <h1>Tu salud es una prioridad</h1>
+            </div>
+        </article>
+        <section class="opciones">
+            <div class="container">
+                <h2 class="titulo-opciones">Estas son las opciones que tenemos para ti</h2>
+                <div class="row">
+                    <a href="#" class="col-12 col-md-4 servicios"> <!-- Clases para responsividad -->
+                        <h3><i class="fas fa-calendar-alt"></i> Agendar una hora</h3>
+                        <p>Solicita una hora con nuestros especialistas.</p>
+                    </a>
+        
+                    <a href="{% url 'quienes_somos' %}" class="col-12 col-md-4 servicios"> <!-- Clases para responsividad -->
+                        <h3><i class="fas fa-list-alt"></i> Quienes Somos</h3>
+                        <p>Conoce los detalles de nuestra organización.</p>
+                    <a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>

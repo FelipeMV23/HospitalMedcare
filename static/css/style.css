@@ -1,0 +1,71 @@
+/* Estilo general del cuerpo */
+body {
+    background-color: #ffffff;
+}
+
+/* Estilo del navbar */
+.navbar {
+    background-color: white;
+}
+
+/* Ajustes del logo */
+.navbar-brand img {
+    height: 50px;
+    max-width: 100%;
+}
+
+.nav-item {
+    margin-right: 1rem; /* Añade espacio entre cada botón */
+}
+
+/* Estilo de los botones de navegación */
+.nav-link {
+    color: #3767a6;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: #d91424;
+}
+
+/* Estilo para el usuario */
+.profile-item {
+    text-align: center;
+}
+
+.username {
+    font-size: 0.875rem;
+    color: #3767a6;
+}
+
+/* Botón hamburguesa */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-size: contain;
+}
+
+/* Ajustes en pantallas pequeñas */
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: 0.875rem;
+    }
+}
+
+/* Ajustes en pantallas grandes */
+@media (min-width: 768px) {
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+    }
+}
